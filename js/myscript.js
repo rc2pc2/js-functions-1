@@ -2,6 +2,7 @@
 const userFirstWord = prompt('Type a word');
 const userSecondWord = prompt('Type another word');
 
+
 if ( areWordsLongTheSame(userFirstWord, userSecondWord) ){
     console.log('Words share the same length');
 } else if ( parolaUno.length > parolaDue.length){
@@ -10,6 +11,12 @@ if ( areWordsLongTheSame(userFirstWord, userSecondWord) ){
     console.log('The second word is the longest');
 }
 
+/**
+ * Function that returns true only if the two strings given share the same length.
+ * @param firstWord The first word
+ * @param secondWord The second word
+ * @returns True if the words have the same length, false otherwise
+ */
 function areWordsLongTheSame(firstWord, secondWord){
     if (firstWord.length === secondWord.length){
         return true;
